@@ -8,6 +8,9 @@ langchain = "*"
 requests = "*"
 black = "*"
 tweepy = "*"
+flask = "*"
+openai = "*"
+google-search-results = "*"
 
 [dev-packages]
 

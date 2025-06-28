@@ -8,7 +8,8 @@ from tools.tools import get_profile_url
 
 def lookup(name: str) -> str:
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
-    template = """given the name {name_of_person} I want you to find a link to their Twitter profile page, and extract from it their username.
+    template = """given the name {name_of_person} I want you to find a link to their Twitter profile page, and extract from then end of it their username.
+    It should be after this "https://twitter.com/" and before this "?"
        In Your Final answer only the person's username"""
 
     tools_for_agent = [
